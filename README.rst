@@ -18,9 +18,11 @@ To install ``Mazebox``, please use::
 Dependencies
 ---------------------
 
-The ``graph-tool`` python package will need to be installed. This can be installed with `Conda`, `homebrew`, etc as seen `here <https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions>`_. All other dependencies will be installed with this package.
+The ``dropkick`` python package will need to be installed, as seen `here <https://github.com/KenLauLab/dropkick>`_. 
+The ``graph-tool`` python package will need to be installed. This can be installed with `Conda`, `homebrew`, etc as seen `here <https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions>`_. 
 
-The ``dropkick`` python package will also need to be installed. 
+All other dependencies will be installed with this package.
+
 
 Mazebox Usage:
 ~~~~~~~~~~~~~~~~~~~~~~~~
