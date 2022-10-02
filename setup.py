@@ -27,7 +27,8 @@ install_requires = [
     "scanpy",
     "scvelo",
     "cellrank",
-    "scrublet"
+    "scrublet",
+    'scanorama'
 ]
 
 doc_requires = [
@@ -48,7 +49,7 @@ readme = open("README.rst").read()
 
 setup(
     name="mazebox",
-    version="0.0.1",
+    version="0.0.2",
     description="A suite of tools for analyzing single-cell transcriptomics data",
     long_description=readme,
     long_description_content_type="text/x-rst",

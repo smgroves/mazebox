@@ -1,8 +1,8 @@
 =======================================================
 Mazebox
 =======================================================
-.. image:: https://badge.fury.io/py/booleabayes.svg
-    :target: https://pypi.org/project/booleabayes/
+.. image:: https://badge.fury.io/py/mazebox.svg
+    :target: https://pypi.org/project/mazebox/
     :alt: Latest PYPi Version
 
 Mazebox is a suite of tools for analyzing single-cell transcriptomics data. 
