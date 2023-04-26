@@ -35,6 +35,7 @@ def dropkick_recipe(
     target_sum=None,
     X_final="arcsinh_norm",
     n_comps=50,
+    scale = False
 ):
     print("Running dropkick on each sample and filtering...")
     if len(adatas) == 1:
@@ -119,13 +120,15 @@ def dropkick_recipe(
 
     # arcsinh-transform normalized counts (adata.layers["arcsinh_norm"])
     adata.X = np.arcsinh(adata.layers["norm_counts"])
-    sc.pp.scale(adata)  # scale genes for feeding into model
+    if scale:
+        sc.pp.scale(adata)  # scale genes for feeding into model
     adata.layers[
         "arcsinh_norm"
     ] = adata.X.copy()  # save arcsinh scaled counts in .layers
 
     adata.X = np.log1p(adata.layers["norm_counts"])
-    sc.pp.scale(adata)  # scale genes for feeding into model
+    if scale:
+        sc.pp.scale(adata)  # scale genes for feeding into model
     adata.layers["log1p_norm"] = adata.X.copy()  # save log1p scaled counts in .layers
 
     # HVGs
